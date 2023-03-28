@@ -1,0 +1,70 @@
+@function getAnimationDuration($duration: number) {
+  @return calc($duration * var(--animation-speed));
+}
+
+@import './reset.scss';
+@import './variables.scss';
+@import './animations.scss';
+
+.main {
+  padding-block: 3vw;
+}
+body {
+  font-size: var(--font-size);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-light);
+}
+
+.logo,
+.page-title {
+  font-family: 'Comforter', cursive;
+  color: var(--primary-color);
+  font-size: 2.5em;
+  text-shadow: 0 1px 3px var(--shadow-color);
+}
+
+img {
+  object-fit: cover;
+}
+
+.col {
+  width: 50%;
+}
+
+.container {
+  padding-inline: 18vw;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3vw;
+  &.d-block {
+    display: block;
+  }
+  .title {
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: calc(25px + 0.5vw);
+    margin-bottom: 0.25em;
+    font-weight: 700;
+  }
+}
+
+@import '../components/navbar/navbar.scss';
+@import '../components/sidebar/sidebar.scss';
+@import '../components/hero/hero.scss';
+@import '../components/imageBlock/imageBlock.scss';
+@import '../components/skills/skills.scss';
+@import '../components/quote/quote.scss';
+@import '../components/topChiefs/chiefCard/chiefCard.scss';
+@import '../components/topChiefs/topChiefs.scss';
+@import '../components/footer/footer.scss';
+@import '../components/slider/slider.scss';
+@import '../components/category/category.scss';
+@import '../components/recipeCard/recipeCard.scss';
+@import '../components/recipeSingleCard/recipeSingleCard.scss';
+@import '../pages/recipes/recipes.scss';
+@import '../pages/settings/settings.scss';
+@import './adaptive.scss';

@@ -1,0 +1,34 @@
+.categoryList {
+  display: flex;
+  margin-bottom: 20px;
+  
+}
+
+.categoryListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size: calc(13px + 0.3vw);
+  color: var(--text-color);
+  transform: translateX(100%);
+  opacity: 0;
+  animation: getAnimationDuration(0.5s) slideInRight forwards;
+  &.active {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+}
+
+
+
+.categoryListImg {
+  width: calc(30px + 3vw);
+  height: calc(30px + 3vw);
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}

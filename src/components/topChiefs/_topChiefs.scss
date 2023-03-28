@@ -1,0 +1,10 @@
+.section.chiefs{
+  display: block; 
+}
+
+.top-chiefs-container{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 5em;
+}

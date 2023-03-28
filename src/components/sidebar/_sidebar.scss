@@ -1,0 +1,28 @@
+.sidebar {
+  animation: getAnimationDuration(0.3s) slideInLeft;
+ 
+}
+.sidebar-link {
+  display: block;
+  padding: 0.5em 1em;
+  border-left: 0.4em solid transparent;
+  margin-bottom: 1em;
+  color: var(--text-color);
+  font-size: 1.1em;
+  animation: getAnimationDuration(1s) slideInLeft forwards;
+  
+
+  &.active {
+    border-left-color: var(--primary-color);
+   
+  }
+  &:hover {
+    border-left-color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+  svg {
+    width: 1.2em;
+    margin-right: 0.5em;
+  }
+}
+

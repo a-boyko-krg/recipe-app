@@ -1,0 +1,19 @@
+.section.quote {
+  display: block;
+  font-family: 'Comforter', cursive;
+  font-size: 2.8em;
+  .quote-text {
+    color: var(--text-color);
+
+    svg {
+      color: var(--primary-color);
+      font-size: 1.2em;
+      margin-right: 0.5em;
+    }
+  }
+  .qoute-author {
+    color: var(--text-light);
+    text-align: right;
+    margin-top: 1em;
+  }
+}

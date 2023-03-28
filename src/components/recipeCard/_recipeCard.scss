@@ -1,0 +1,60 @@
+.recipe-card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  background-color: var(--background-color);
+}
+
+.recipe-card-info {
+  padding: 15px;
+}
+
+.author-img {
+  border: 2px solid var(--background-light);
+  box-shadow: 0 1px 3px var(--shadow-color);
+  margin-top: -37px;
+  z-index: 1000;
+}
+
+.recipe-title {
+  font-family: 'Marmelad', sans-serif;
+  font-size: 1.25em;
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin: 0.5em 0.25em;
+}
+
+.recipe-desc {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9em;
+  color: var(--text-light);
+  line-height: 16px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.more-info {
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  color: #be9656;
+  line-height: 20px;
+    display: flex;
+  justify-content: space-between;
+}
+
+.heart:hover {
+  animation: heartbeat 1s infinite;
+  color: red;
+  opacity: 1;
+  transition: opacity 500ms;
+}

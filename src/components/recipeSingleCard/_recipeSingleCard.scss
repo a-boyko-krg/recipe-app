@@ -1,0 +1,75 @@
+.singleRecipeWrapper {
+  padding: 20px 40px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-info {
+  display: flex;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  color: #be9656;
+  gap: 20px;
+}
+.singlePostContentUp {
+  display: flex;
+  gap: 20px;
+}
+
+.singlePostDesc {
+  font-style: italic;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: calc(17px + 0.625vw);
+  font-weight: 600;
+}
+
+.singlePostImg {
+  width: 40%;
+  height: auto;
+  position: relative;
+}
+
+.author-img {
+  bottom: 20px;
+}
+
+.singlePostDownTitle {
+  padding: 5px 0 5px 0;
+}
+
+.singlePostContentText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.singlePostDownTitle {
+  font-weight: 800;
+}
+
+.singlePostListItem {
+  font-style: italic;
+  margin-left: 30px;
+  list-style: disc;
+}
+
+.methodTitle {
+  padding-top: 20px;
+}
+
+.methodItem {
+  list-style: decimal;
+  padding: 10px;
+}
